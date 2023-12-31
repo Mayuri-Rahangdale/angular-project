@@ -1,0 +1,10 @@
+<div style="font-style: italic" id="totalCartItemsCounter">
+  Items in the Cart:
+  {{ cartItems.length }}
+</div>
+@for(product of products; track product.id) {
+<app-product-details
+  [product]="product"
+  (addToCart)="onProductAddToCart($event)"
+></app-product-details>
+}

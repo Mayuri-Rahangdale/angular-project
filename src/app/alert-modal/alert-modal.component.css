@@ -1,0 +1,29 @@
+.mat-dialog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+div {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #8a4bad; /* Background color */
+  color: white; /* Text color */
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: rgb(53, 24, 80);
+}

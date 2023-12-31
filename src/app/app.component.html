@@ -1,0 +1,15 @@
+<div>
+  <app-home></app-home>
+  <app-book-interest></app-book-interest>
+  <app-books></app-books>
+  <app-product-list></app-product-list>
+  <app-product-details
+    [product]="{
+      id: 1,
+      name: 'Phone X',
+      price: 1000,
+      description: 'Its a durable phone'
+    }"
+    (addToCart)="onProductAddToCart($event)"
+  ></app-product-details>
+</div>

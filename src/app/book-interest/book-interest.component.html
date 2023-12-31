@@ -1,0 +1,16 @@
+<div>
+  <h2>Book Interests:</h2>
+  <input [(ngModel)]="favoriteBook" placeholder="Book title" />
+  <button (click)="sendBook()">Send to Book to Parent</button>
+  <app-books
+    [receivedBook]="receivedBook"
+    [receivedBooks]="receivedBooks"
+    (sendBookToParent)="receivedBookFromChild($event)"
+    (sendBooksToParent)="receivedBooksFromChild($event)"
+  ></app-books>
+</div>
+
+<div>
+  <p>Received Books: {{ receivedBook }}</p>
+  <p>Received books Array: {{ receivedBooks }}</p>
+</div>
