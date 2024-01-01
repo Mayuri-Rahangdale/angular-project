@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  constructor(private dateAdapter: DateAdapter<any>) {
+    this.dateAdapter.setLocale('en-IN');
+  }
   cartItems: any[] = [];
 
   onProductAddToCart(product: any) {

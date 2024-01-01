@@ -1,0 +1,34 @@
+.container {
+  padding: 20px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.cat-heading {
+  font-size: 1.5m;
+  font-weight: bold;
+}
+
+.custom-image {
+  width: 10%;
+  height: auto;
+}
+
+.mat-icon {
+  font-size: 24px;
+}
+
+.liked {
+  color: blue;
+}
+
+.shared {
+  color: green;
+}
